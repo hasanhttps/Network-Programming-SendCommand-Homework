@@ -97,6 +97,7 @@ namespace Server {
                 if (item.Id == car.Id) return false;
             }
             Cars.Add(car);
+            WriteData(Cars, "Cars");
             return true;
         }
 
@@ -108,6 +109,7 @@ namespace Server {
                     return true;
                 }
             }
+            WriteData(Cars, "Cars");
             return false;
         }
 
@@ -118,6 +120,7 @@ namespace Server {
                     return true;
                 }
             }
+            WriteData(Cars, "Cars");
             return false;
         }
     }
